@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uinterior</title>
+    <!-- Tailwind css CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Daisy UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/4d5669a12e.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .font-family-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-family-inter {
+        font-family: "Inter", sans-serif;
+      }
+      .dropdown-content-css {
+        margin-left: -180px !important;
+      }
+      .video-section video {
+        filter: brightness(50%);
+      }
+    </style>
+    <!-- Tailwind css custom style -->
+    <style type="text/tailwindcss">
+      @theme {
+        --color-utext: #bdbdbd;
+        --color-uprimary: #abef5f;
+        --background-color-uprimary: #abef5f;
+        --background-color-bglightgray: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body class="font-family-poppins">
+    <!-- Header section -->
+    <header>
+      <!-- Navbar Section -->
+      <section class="text-white">
+        <nav class="absolute z-50 w-full">
+          <div class="navbar container mx-auto sticky top-0">
+            <!-- Left Part -->
+            <div class="navbar-start">
+              <a class="cursor-pointer text-3xl font-extrabold"
+                ><i
+                  class="fa-solid fa-arrow-right -rotate-45 bg-uprimary rounded-full w-7 h-7 shadow-md font-semibold"
+                ></i>
+                Uinterior</a
+              >
+            </div>
+            <!-- Middle part -->
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li>
+                  <a href="">Services</a>
+                </li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <!-- End/Right part -->
+            <div class="navbar-end">
+              <div class="hidden md:block">
+                <button class="cursor-pointer mr-3">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="cursor-pointer mr-3">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <button class="cursor-pointer bg-uprimary p-2 rounded-2xl">
+                  Book Consult
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 text-utext bg-black rounded-full p-1"
+                  ></i>
+                </button>
+              </div>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <div
+                  tabindex="0"
+                  class="menu menu-md dropdown-content bg-base-100 z-1 mt-4 p-2 w-52 shadow-md dropdown-content-css"
+                >
+                  <ul class="w-full">
+                    <li><a>Home</a></li>
+                    <li>
+                      <a href="">Services</a>
+                    </li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                  <div class="md:hidden flex flex-col items-start p-2">
+                    <button class="cursor-pointer">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <button class="cursor-pointer bg-uprimary p-2 rounded-2xl">
+                      Book Consult
+                      <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- Banner Section -->
+      <section>
+        <div class="video-section relative w-full h-screen overflow-hidden">
+          <video class="" autoplay loop muted>
+            <source src="./assets/Header-banner.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div
+            class="absolute left-1/2 lg:top-1/3 top-1/4 translate-x-[-50%] lg:translate-y-[-50%] translate-y-[-70%] text-center"
+          >
+            <h1
+              class="text-3xl lg:text-5xl font-extrabold text-[#fff] font-family-inter"
+            >
+              The Passion for quality
+            </h1>
+            <button
+              class="cursor-pointer font-bold bg-[#7fc332] text-white px-3 py-2 lg:mt-7 mt-3 rounded-2xl"
+            >
+              Book Now
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 text-utext bg-black rounded-full p-1"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Main Section -->
+    <section class="bg-bglightgray">
+      <div class="container mx-auto mt-20">
+        <div class="flex items-stretch gap-6 py-20">
+          <!-- content -->
+          <div class="flex-1">
+            <h2 class="bg-white w-28 mb-5 p-2 rounded-xl text-base">
+              <i class="fa-solid fa-arrow-right"></i> About Us
+            </h2>
+            <h3 class="font-bold text-4xl">
+              We design thoughtful, liveable spaces
+            </h3>
+            <p class="text-base mb-5 mt-5">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <div class="business-category">
+              <div
+                class="commercial bg-white flex justify-start mt-3 rounded-xl items-center gap-3 py-4 px-3"
+              >
+                <div class="icon">
+                  <img src="./assets/commercial.png" alt="Commercial Icon" />
+                </div>
+                <div class="content">
+                  <h3 class="text-2xl font-bold">Commercial</h3>
+                  <p class="text-base">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="commercial bg-white flex justify-start mt-3 rounded-xl items-center gap-3 py-4 px-3"
+              >
+                <div class="icon">
+                  <img src="./assets/residential.png" alt="Commercial Icon" />
+                </div>
+                <div class="content">
+                  <h3 class="text-2xl font-bold">Residential</h3>
+                  <p class="text-base">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+
+          <img
+            class="h-full flex-1 block object-cover"
+            src="./assets/Rectangle.png"
+            alt="Home"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+  </body>
+</html>
