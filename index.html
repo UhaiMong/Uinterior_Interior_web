@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uinterior</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <!-- Tailwind css CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Daisy UI CDN -->
@@ -155,20 +156,30 @@
     <!-- Main Section -->
     <section class="bg-bglightgray mt-2 lg:mt-20 overflow-hidden pb-14">
       <div class="card lg:card-side container mx-auto py-20">
-        <div class="card-body lg:w-1/2">
-          <h2 class="bg-white w-28 mb-5 p-2 rounded-xl text-base">
-            <i class="fa-solid fa-arrow-right"></i> About Us
-          </h2>
-          <h3 class="font-bold text-4xl">
-            We design thoughtful,<br />liveable spaces
-          </h3>
-          <p class="text-base mt-5">
-            The barn house captivates with its blend of rustic charm and modern
-            sophistication, featuring weathered wood, sleek metal accents. We
-            are focusing on the passion of quality and unique something. We are
-            5 years+ experience on the field and 300+ projects on going. We have
-            completed 34000+ projects and 100% satisfication.
-          </p>
+        <div class="card-body lg:w-1/2 lg:relative">
+          <img
+            class="w-24 top-[-20px] left-[2px] hidden lg:block lg:absolute"
+            src="./assets/Vector.png"
+            alt="Vector"
+          />
+          <div class="text-center md:text-start">
+            <h2
+              class="bg-white w-28 md:mx-0 mx-auto mb-5 p-2 rounded-xl text-base"
+            >
+              <i class="fa-solid fa-arrow-right"></i> About Us
+            </h2>
+            <h3 class="font-bold text-4xl">
+              We design thoughtful,<br />liveable spaces
+            </h3>
+            <p class="text-base mt-5">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents. We are focusing on the passion of quality and unique
+              something. We are 5 years+ experience on the field and 300+
+              projects on going. We have completed 34000+ projects and 100%
+              satisfication.
+            </p>
+          </div>
           <div
             class="business-category flex flex-col md:flex-row md:gap-5 lg:flex-col"
           >
@@ -318,13 +329,260 @@
             <i class="fa-solid fa-arrow-right"></i> Explore our Latest works
           </h2>
           <h3 class="font-bold text-4xl">Our Latest Portfolio</h3>
-          <p class="text-base mt-5 w-3/4 mx-auto mb-5">
+          <p class="text-base mt-5 w-3/4 mx-auto mb-5 text-center">
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
         </div>
+        <!-- Portfolio project -->
+        <div
+          class="flex flex-col md:flex-col lg:flex-row gap-x-4 gap-y-5 md:gap-y-3 items-center justify-between"
+        >
+          <div
+            class="flex flex-col sm:flex-row items-start justify-start mt-5 border-1 border-gray-300 shadow-md p-4 gap-x-5 rounded-xl md:w-full w-4/5"
+          >
+            <img
+              class="w-full md:w-auto"
+              src="./assets/img1.png"
+              alt="Home for commercial"
+            />
+            <!-- Comercial content -->
+            <div>
+              <div
+                class="flex flex-col justify-between md:h-44 h-56 w-full text-left"
+              >
+                <h2 class="text-2xl font-extrabold">Commercial</h2>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern. The barn house captivates with its blend of rustic
+                  charm and modern .
+                </p>
+                <button
+                  class="text-left text-xl font-extrabold cursor-pointer block w-44 h-7"
+                >
+                  View Details
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 rounded-full font-semibold bg-uprimary"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-lg h-44 border-1 border-gray-300 p-4 rounded-xl">
+            <img
+              class="h-full"
+              src="./assets/img2.png"
+              alt="Home for Commercial"
+            />
+          </div>
+        </div>
+        <!-- Residential content -->
+        <div class="flex flex-col lg:flex-row mt-7 gap-5 items-center">
+          <!-- image -->
+          <div
+            class="w-full lg:w-1/4 h-44 rounded-xl border-1 border-gray-300 p-4 shadow-lg"
+          >
+            <img
+              class="w-full h-full object-cover rounded-xl"
+              src="./assets/img3.png"
+              alt="Smart Home"
+            />
+          </div>
+          <!-- Content + Image -->
+          <div
+            class="w-full lg:w-1/2 flex gap-4 items-center justify-start rounded-xl border-1 border-gray-300 p-4 shadow-lg"
+          >
+            <div class="h-44 w-auto rounded-lg">
+              <img
+                class="h-full w-auto object-cover rounded-lg"
+                src="./assets/img4.png"
+                alt="Residential"
+              />
+            </div>
+            <!-- Content -->
+            <div class="flex-1">
+              <div class="flex flex-col justify-between h-44">
+                <h2 class="text-2xl font-extrabold">Residential</h2>
+                <p>
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+                <button
+                  class="text-left text-xl font-extrabold cursor-pointer block w-44 h-7"
+                >
+                  View Details
+                  <i
+                    class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 rounded-full font-semibold bg-uprimary"
+                  ></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+          <div
+            class="w-full lg:w-1/4 h-44 rounded-xl border-1 border-gray-300 p-4 shadow-lg"
+          >
+            <img
+              class="w-full h-full object-cover rounded-xl"
+              src="./assets/img5.png"
+              alt="Smart Home"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Article Or Blog section -->
+    <section class="bg-bglightgray">
+      <div class="container mx-auto">
+        <!-- Blog heading -->
+        <div class="flex flex-col justify-center items-center mt-9 py-9">
+          <h2 class="bg-[#ABEF5F] w-40 mb-5 p-2 rounded-xl text-base">
+            <i class="fa-solid fa-arrow-right"></i> Uinterior News
+          </h2>
+          <h3 class="font-bold text-4xl">Read Our Article and News</h3>
+          <p class="text-base mt-5 w-3/4 mx-auto mb-5 text-center">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- Blog content -->
+        <div
+          class="pb-9 flex flex-col lg:flex-row justify-center items-center gap-4"
+        >
+          <!-- Single Article -->
+          <div
+            class="card bg-base-100 w-full lg:w-96 shadow-sm flex flex-col lg:flex-col md:flex-row"
+          >
+            <figure class="p-4">
+              <img
+                src="./assets/article1.png"
+                alt="Article image 1"
+                class="rounded-xl object-cover w-full md:w-auto"
+              />
+            </figure>
+
+            <div class="p-4">
+              <div class="text-sm flex flex-row justify-start gap-x-4">
+                <p><i class="fa-solid fa-calendar-days"></i> July, 2025</p>
+                <p><i class="fa-solid fa-user-tie"></i> by Admin</p>
+              </div>
+              <h2 class="text-[#494949] text-xl font-extrabold my-4">
+                How to choose the furniture right of your home.
+              </h2>
+              <p class="font-medium text-base text-[#494949]">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <button class="cursor-pointer font-bold text-lg text-start mt-4">
+                Read More
+                <i
+                  class="fa-solid fa-arrow-right -rotate-45 text-[#212121] bg-[#ABEF5F] rounded-full p-1"
+                ></i>
+              </button>
+            </div>
+          </div>
+          <!-- Single Article -->
+          <div
+            class="card bg-base-100 w-full lg:w-96 shadow-sm flex flex-col lg:flex-col md:flex-row"
+          >
+            <figure class="p-4">
+              <img
+                src="./assets/article2.png"
+                alt="Article image 2"
+                class="rounded-xl object-cover w-full md:w-auto"
+              />
+            </figure>
+
+            <div class="p-4">
+              <div class="text-sm flex flex-row justify-start gap-x-4">
+                <p><i class="fa-solid fa-calendar-days"></i> July, 2025</p>
+                <p><i class="fa-solid fa-user-tie"></i> by Admin</p>
+              </div>
+              <h2 class="text-[#494949] text-xl font-extrabold my-4">
+                How to choose the furniture right of your home.
+              </h2>
+              <p class="font-medium text-base text-[#494949]">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <button class="cursor-pointer font-bold text-lg text-start mt-4">
+                Read More
+                <i
+                  class="fa-solid fa-arrow-right -rotate-45 text-[#212121] bg-[#ABEF5F] rounded-full p-1"
+                ></i>
+              </button>
+            </div>
+          </div>
+          <!-- Single Article -->
+          <div
+            class="card bg-base-100 w-full lg:w-96 shadow-sm flex flex-col lg:flex-col md:flex-row"
+          >
+            <figure class="p-4">
+              <img
+                src="./assets/article3.png"
+                alt="Article image 3"
+                class="rounded-xl object-cover w-full md:w-auto"
+              />
+            </figure>
+
+            <div class="p-4">
+              <div class="text-sm flex flex-row justify-start gap-x-4">
+                <p><i class="fa-solid fa-calendar-days"></i> July, 2025</p>
+                <p><i class="fa-solid fa-user-tie"></i> by Admin</p>
+              </div>
+              <h2 class="text-[#494949] text-xl font-extrabold my-4">
+                How to choose the furniture right of your home.
+              </h2>
+              <p class="font-medium text-base text-[#494949]">
+                A card component has a figure, a body part, and inside body
+                there are title and actions parts
+              </p>
+              <button class="cursor-pointer font-bold text-lg text-start mt-4">
+                Read More
+                <i
+                  class="fa-solid fa-arrow-right -rotate-45 text-[#212121] bg-[#ABEF5F] rounded-full p-1"
+                ></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section
+      class="bg-[url(./assets/bg.jpg)] bg-no-repeat bg-cover bg-center w-full my-5"
+    >
+      <div class="w-2/3 mx-auto h-[921px]">
+        <h2>Let's Discus Next Project</h2>
       </div>
     </section>
     <!-- Footer Section -->
+    <section>
+      <footer
+        class="footer sm:footer-horizontal bg-[#1E1E1E] text-neutral-content p-10"
+      >
+        <nav>
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
+    </section>
   </body>
 </html>
